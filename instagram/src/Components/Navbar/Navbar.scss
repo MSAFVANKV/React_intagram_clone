@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px){
+.navbar {
+    .container-fluid {
+        .search {
+            position: relative;
+            width: 15rem;
+            // margin-left: 7rem;
+            input {
+                border: 0;
+                border-radius: 0.5rem;
+                background-color: #EFEFEF;
+                width: 16rem;
+                height: 2.1rem;
+                padding-left: 2rem; // Padding when the input is not focused
+
+
+                &.focused {
+                    padding-left: 1rem; // Reduced padding when the input is focused
+                    
+                }
+                &:focus {
+                    outline: none;  // Removes the default outline/border when input is focused
+                }
+            }
+            
+            .search-icon {
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+                font-size: 1rem;
+                color: #ccc;
+                z-index: 5; 
+            }
+        }
+    }
+}
+}
